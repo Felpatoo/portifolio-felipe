@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Siscaro Mendes | Desenvolvedor Web & Estudante de Programação</title>
+    <meta name="description" content="Portfólio de Felipe Siscaro Mendes (Felpatoo). Desenvolvedor Web no Rio de Janeiro. Criador do Anvisa INCI e especialista em landing pages de alta conversão.">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            950: '#080c14',
+                            900: '#0d1321',
+                            800: '#172033',
+                            700: '#26344d'
+                        },
+                        brand: {
+                            cyan: '#06b6d4',
+                            blue: '#3b82f6',
+                            purple: '#8b5cf6',
+                            emerald: '#10b981'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-glow {
+            background-image: 
+                radial-gradient(circle at 20% 15%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+                radial-gradient(circle at 80% 25%, rgba(6, 182, 212, 0.14) 0%, transparent 45%);
+        }
+        .featured-glow {
+            box-shadow: 0 0 40px -10px rgba(6, 182, 212, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-dark-950 text-slate-200 antialiased font-sans selection:bg-cyan-600 selection:text-white">
+
+    <!-- NAVBAR FIXA -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-dark-950/85 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="font-mono text-base sm:text-lg font-bold text-white flex items-center gap-1.5">
+                <span class="text-brand-cyan">&lt;</span>
+                <span>Felipe Siscaro</span>
+                <span class="text-brand-blue">/&gt;</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#destaque" class="hover:text-brand-cyan transition">Projeto Principal</a>
+                <a href="#cases" class="hover:text-brand-cyan transition">Landing Pages</a>
+                <a href="#habilidades" class="hover:text-brand-cyan transition">Stack</a>
+                <a href="#sobre" class="hover:text-brand-cyan transition">Sobre Mim</a>
+                <a href="#contato" class="hover:text-brand-cyan transition">Contato</a>
+            </nav>
+
+            <div class="flex items-center gap-2.5">
+                <a href="https://github.com/Felpatoo" target="_blank" 
+                   class="p-2 rounded-lg bg-dark-800 hover:bg-dark-700 text-slate-300 hover:text-white transition border border-slate-700/80" 
+                   aria-label="GitHub de Felipe">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/felipesiscaromendes21/" target="_blank" 
+                   class="p-2 rounded-lg bg-dark-800 hover:bg-dark-700 text-slate-300 hover:text-blue-400 transition border border-slate-700/80" 
+                   aria-label="LinkedIn de Felipe">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i>
+                </a>
+                <a href="https://wa.me/5521985236753?text=Ol%C3%A1%20Felipe!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." 
+                   target="_blank"
+                   class="hidden sm:inline-flex bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition shadow-md shadow-blue-900/30">
+                    Falar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-[90vh] pt-28 pb-16 px-4 flex items-center hero-glow relative">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            
+            <!-- Badge de Localização -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300 text-xs font-semibold">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-cyan"></i>
+                Rio de Janeiro - RJ • Estudante de Programação & Dev Web
+            </div>
+
+            <!-- Título Principal -->
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white leading-tight">
+                Olá, eu sou o <span class="bg-gradient-to-r from-blue-400 via-cyan-400 to-emerald-400 bg-clip-text text-transparent">Felipe Siscaro</span>.
+            </h1>
+
+            <p class="text-slate-300 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
+                Desenvolvedor Web criando aplicações práticas como o <strong class="text-white font-semibold">Anvisa INCI</strong> e desenvolvendo páginas comerciais de alta conversão para o mercado real.
+            </p>
+
+            <!-- Links Rápidos e CTAs -->
+            <div class="flex flex-col sm:flex-row gap-3.5 justify-center items-center pt-3">
+                <a href="#destaque" 
+                   class="w-full sm:w-auto px-7 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm shadow-xl shadow-cyan-500/25 transition flex items-center justify-center gap-2">
+                    <i data-lucide="star" class="w-4 h-4 fill-slate-950"></i>
+                    Conhecer o Projeto Anvisa INCI
+                </a>
+                <a href="https://wa.me/5521985236753?text=Ol%C3%A1%20Felipe!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20um%20projeto%20web." 
+                   target="_blank"
+                   class="w-full sm:w-auto px-7 py-3 rounded-xl bg-dark-900 hover:bg-dark-800 text-slate-200 border border-slate-700 font-semibold text-sm transition flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+                    WhatsApp
+                </a>
+                <a href="https://github.com/Felpatoo" target="_blank" 
+                   class="w-full sm:w-auto px-5 py-3 rounded-xl bg-dark-900/60 hover:bg-dark-800 text-slate-300 border border-slate-800 font-medium text-sm transition flex items-center justify-center gap-2">
+                    <i data-lucide="github" class="w-4 h-4 text-brand-cyan"></i>
+                    GitHub (@Felpatoo)
+                </a>
+            </div>
+
+            <!-- Mini estatísticas -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-8 border-t border-slate-800/80 max-w-lg mx-auto text-center text-xs">
+                <div class="p-3 bg-dark-900/50 rounded-xl border border-slate-800">
+                    <p class="font-mono text-cyan-400 font-bold text-base">Anvisa INCI</p>
+                    <p class="text-slate-400 mt-0.5">Projeto Principal</p>
+                </div>
+                <div class="p-3 bg-dark-900/50 rounded-xl border border-slate-800">
+                    <p class="font-mono text-blue-400 font-bold text-base">Mobile-First</p>
+                    <p class="text-slate-400 mt-0.5">Design Responsivo</p>
+                </div>
+                <div class="p-3 bg-dark-900/50 rounded-xl border border-slate-800 col-span-2 sm:col-span-1">
+                    <p class="font-mono text-emerald-400 font-bold text-base">CRO & Vendas</p>
+                    <p class="text-slate-400 mt-0.5">Landing Pages Locais</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJETO PRINCIPAL EM DESTAQUE: ANVISA INCI -->
+    <section id="destaque" class="py-20 px-4 bg-dark-900/90 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="flex items-center gap-2 mb-4">
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                <span class="text-brand-cyan font-mono text-xs uppercase tracking-widest font-bold">Projeto Principal do GitHub</span>
+            </div>
+
+            <!-- Card Especial Gigante -->
+            <div class="featured-glow bg-gradient-to-br from-dark-900 via-dark-900 to-dark-800 border-2 border-cyan-500/40 rounded-3xl p-6 sm:p-10 relative overflow-hidden">
+                <div class="absolute -right-16 -top-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-5">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-bold">
+                            <i data-lucide="database" class="w-3.5 h-3.5"></i>
+                            Regulação Sanitária & Tradução Cosmética
+                        </div>
+
+                        <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight leading-tight">
+                            Anvisa INCI <span class="text-slate-400 font-normal text-2xl block sm:inline sm:text-3xl">| Consulta & Tradução de Ingredientes</span>
+                        </h2>
+
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Aplicação focada em simplificar a consulta, padronização e tradução da <strong class="text-white">Nomenclatura Internacional de Ingredientes Cosméticos (INCI)</strong> para a língua portuguesa, em total conformidade com as diretrizes da <strong class="text-cyan-300">Resolução RDC 646 da ANVISA</strong>.
+                        </p>
+
+                        <div class="space-y-2 text-xs sm:text-sm text-slate-300">
+                            <div class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                                <span>Busca inteligente por termo INCI, nome em português ou Nº de registro CAS.</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                                <span>Auxilia químicos, farmacêuticos, marcas de cosméticos e consumidores na conferência de rotulagem.</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                                <span>Solução técnica desenvolvida com foco em agilidade, dados estruturados e facilidade de navegação.</span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-xs font-mono bg-dark-950 text-cyan-300 px-3 py-1 rounded-lg border border-cyan-500/30">JavaScript / Web</span>
+                            <span class="text-xs font-mono bg-dark-950 text-slate-300 px-3 py-1 rounded-lg border border-slate-700">Tratamento de Dados</span>
+                            <span class="text-xs font-mono bg-dark-950 text-slate-300 px-3 py-1 rounded-lg border border-slate-700">ANVISA RDC 646</span>
+                            <span class="text-xs font-mono bg-dark-950 text-slate-300 px-3 py-1 rounded-lg border border-slate-700">Open Source</span>
+                        </div>
+
+                        <div class="pt-3 flex flex-wrap gap-4">
+                            <a href="https://github.com/Felpatoo" target="_blank" 
+                               class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition text-sm flex items-center gap-2 shadow-lg shadow-cyan-500/20">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                                Acessar Repositório no GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bloco Visual / Mockup Code -->
+                    <div class="lg:col-span-5 bg-dark-950 border border-slate-800 rounded-2xl p-5 shadow-2xl font-mono text-xs text-slate-300">
+                        <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-800 text-slate-500">
+                            <div class="flex items-center gap-1.5">
+                                <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                                <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                                <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                            </div>
+                            <span class="text-[11px] text-slate-400">anvisa-inci.config</span>
+                        </div>
+
+                        <div class="space-y-2 text-slate-400">
+                            <p><span class="text-purple-400">const</span> <span class="text-blue-400">project</span> = {</p>
+                            <p class="pl-4">name: <span class="text-emerald-300">"Anvisa INCI"</span>,</p>
+                            <p class="pl-4">author: <span class="text-emerald-300">"Felipe Siscaro Mendes"</span>,</p>
+                            <p class="pl-4">goal: <span class="text-emerald-300">"Padronização e Tradução INCI"</span>,</p>
+                            <p class="pl-4">compliance: <span class="text-yellow-300">"RDC 646/2022 - ANVISA"</span>,</p>
+                            <p class="pl-4">status: <span class="text-cyan-400">"Em constante aprimoramento"</span></p>
+                            <p>};</p>
+                            <p class="pt-2 text-cyan-400">// Otimizando o acesso à informação regulatória</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEÇÃO: CASOS REAIS DE LANDING PAGES -->
+    <section id="cases" class="py-20 px-4 bg-dark-950">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="mb-12">
+                <span class="text-brand-blue font-mono text-xs uppercase tracking-widest font-bold">Freelance & Negócios Locais</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Landing Pages Comerciais</h2>
+                <p class="text-slate-400 text-sm max-w-xl mt-1">
+                    Projetos desenhados para estabelecimentos do Flamengo (Rio de Janeiro), combinando design profissional e foco direto em conversão via WhatsApp.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- CASE 1: Autoescola Apollo -->
+                <div class="group bg-dark-900 border border-slate-800 hover:border-amber-500/50 rounded-2xl overflow-hidden transition duration-300 flex flex-col justify-between">
+                    <div class="p-6 sm:p-8 space-y-4">
+                        <div class="flex justify-between items-start">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                                Setor de Trânsito / CFC
+                            </span>
+                            <span class="text-xs text-slate-500 flex items-center gap-1">
+                                <i data-lucide="map-pin" class="w-3 h-3 text-amber-400"></i> Flamengo, RJ
+                            </span>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-white group-hover:text-amber-400 transition">
+                            Autoescola Apollo
+                        </h3>
+                        
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Landing page de alta conversão para autoescola com mais de 40 anos de tradição. Destaque estruturado para 1ª Habilitação (A e B), facilidade de parcelamento em 20x no cartão, botões rápidos de WhatsApp e mapa interativo na R. Marquês de Abrantes.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-xs font-mono bg-dark-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">HTML5</span>
+                            <span class="text-xs font-mono bg-dark-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Tailwind CSS</span>
+                            <span class="text-xs font-mono bg-dark-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Conversão CRO</span>
+                            <span class="text-xs font-mono bg-dark-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Google Maps Embed</span>
+                        </div>
+                    </div>
+
+                    <div class="px-6 sm:px-8 py-4 bg-dark-950/60 border-t border-slate-800/80 flex items-center justify-between text-xs font-semibold">
+                        <span class="text-amber-400 flex items-center gap-1.5">
+                            <i data-lucide="check" class="w-3.5 h-3.5"></i> Foco em Captação de Alunos
+                        </span>
+                        <a href="https://github.com/Felpatoo" target="_blank" class="text-slate-300 hover:text-white flex items-center gap-1 transition">
+                            Ver no GitHub <i data-lucide="arrow-up-right" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CASE 2: Pet Shop Cantinho Animal -->
+                <div class="group bg-dark-900 border border-slate-800 hover:border-emerald-500/50 rounded-2xl overflow-hidden transition duration-300 flex flex-col justify-between">
+                    <div class="p-6 sm:p-8 space-y-4">
+                        <div class="flex justify-between items-start">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">
+                                Pet Shop & Clínica
+                            </span>
+                            <span class="text-xs text-slate-500 flex items-center gap-1">
+                                <i data-lucide="map-pin" class="w-3 h-3 text-emerald-400"></i> Flamengo, RJ
+                            </span>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-white group-hover:text-emerald-400 transition">
+                            Cantinho Animal Pet Shop
+                        </h3>
+                        
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Página de comércio local pensada para moradores do bairro. Destaque estratégico para serviço de entrega em domicílio (delivery de rações e remédios), consultório veterinário, banho e tosa e ligação direta para a loja.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-xs font-mono bg-dark-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">UI Responsiva</span>
+                            <span class="text-xs font-mono bg-dark-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Tailwind CSS</span>
+                            <span class="text-xs font-mono bg-dark-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Delivery Local</span>
+                            <span class="text-xs font-mono bg-dark-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Mobile-First</span>
+                        </div>
+                    </div>
+
+                    <div class="px-6 sm:px-8 py-4 bg-dark-950/60 border-t border-slate-800/80 flex items-center justify-between text-xs font-semibold">
+                        <span class="text-emerald-400 flex items-center gap-1.5">
+                            <i data-lucide="check" class="w-3.5 h-3.5"></i> Foco em Pedidos Rápidos
+                        </span>
+                        <a href="https://github.com/Felpatoo" target="_blank" class="text-slate-300 hover:text-white flex items-center gap-1 transition">
+                            Ver no GitHub <i data-lucide="arrow-up-right" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES & STACK -->
+    <section id="habilidades" class="py-20 px-4 bg-dark-900/40 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-14">
+                <span class="text-brand-cyan font-mono text-xs uppercase tracking-widest font-bold">Tecnologias</span>
+                <h2 class="text-3xl font-extrabold text-white mt-1">Conhecimentos & Ferramentas</h2>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+                <div class="p-5 rounded-xl bg-dark-900 border border-slate-800 hover:border-slate-700 transition">
+                    <i data-lucide="file-code" class="w-6 h-6 text-brand-cyan mx-auto mb-2"></i>
+                    <p class="font-bold text-sm text-white">HTML5 Semântico</p>
+                    <p class="text-xs text-slate-400 mt-0.5">Estrutura & SEO</p>
+                </div>
+                <div class="p-5 rounded-xl bg-dark-900 border border-slate-800 hover:border-slate-700 transition">
+                    <i data-lucide="palette" class="w-6 h-6 text-blue-400 mx-auto mb-2"></i>
+                    <p class="font-bold text-sm text-white">CSS3 & Tailwind</p>
+                    <p class="text-xs text-slate-400 mt-0.5">Design Moderno</p>
+                </div>
+                <div class="p-5 rounded-xl bg-dark-900 border border-slate-800 hover:border-slate-700 transition">
+                    <i data-lucide="braces" class="w-6 h-6 text-yellow-400 mx-auto mb-2"></i>
+                    <p class="font-bold text-sm text-white">JavaScript</p>
+                    <p class="text-xs text-slate-400 mt-0.5">Manipulação DOM</p>
+                </div>
+                <div class="p-5 rounded-xl bg-dark-900 border border-slate-800 hover:border-slate-700 transition">
+                    <i data-lucide="smartphone" class="w-6 h-6 text-emerald-400 mx-auto mb-2"></i>
+                    <p class="font-bold text-sm text-white">Responsividade</p>
+                    <p class="text-xs text-slate-400 mt-0.5">Mobile-First</p>
+                </div>
+                <div class="p-5 rounded-xl bg-dark-900 border border-slate-800 hover:border-slate-700 transition">
+                    <i data-lucide="git-branch" class="w-6 h-6 text-pink-400 mx-auto mb-2"></i>
+                    <p class="font-bold text-sm text-white">Git & GitHub</p>
+                    <p class="text-xs text-slate-400 mt-0.5">Versionamento</p>
+                </div>
+                <div class="p-5 rounded-xl bg-dark-900 border border-slate-800 hover:border-slate-700 transition">
+                    <i data-lucide="target" class="w-6 h-6 text-amber-400 mx-auto mb-2"></i>
+                    <p class="font-bold text-sm text-white">CRO & Conversão</p>
+                    <p class="text-xs text-slate-400 mt-0.5">Geração de Leads</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="py-20 px-4 border-t border-slate-800 bg-dark-950">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl bg-gradient-to-tr from-blue-600 via-cyan-500 to-emerald-400 p-1 shrink-0 shadow-2xl">
+                <div class="w-full h-full bg-dark-950 rounded-[14px] flex flex-col items-center justify-center text-white">
+                    <span class="text-4xl font-black font-mono">FM</span>
+                    <span class="text-[10px] text-brand-cyan font-bold tracking-widest mt-1">FELPATOO</span>
+                </div>
+            </div>
+            
+            <div class="space-y-4 text-center md:text-left">
+                <span class="text-brand-cyan font-mono text-xs uppercase tracking-widest font-bold">Perfil</span>
+                <h3 class="text-2xl sm:text-3xl font-bold text-white">Felipe Siscaro Mendes</h3>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Sou estudante dedicado de programação e desenvolvedor web residente no Rio de Janeiro. Gosto de resolver desafios reais do dia a dia por meio do código — seja organizando e automatizando bases de dados regulatórias como no <strong class="text-white">Anvisa INCI</strong>, seja desenvolvendo páginas web completas e atraentes para comércios locais.
+                </p>
+                
+                <div class="flex flex-wrap items-center gap-4 justify-center md:justify-start text-xs text-slate-400 pt-1">
+                    <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-cyan"></i> Rio de Janeiro, Brasil</span>
+                    <span>•</span>
+                    <span class="flex items-center gap-1.5"><i data-lucide="code" class="w-3.5 h-3.5 text-blue-400"></i> Foco em Soluções Práticas</span>
+                    <span>•</span>
+                    <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i> Aberto a Oportunidades</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO / CANAIS DIRETOS -->
+    <section id="contato" class="py-20 px-4 bg-dark-900 border-t border-slate-800 text-center">
+        <div class="max-w-3xl mx-auto space-y-6">
+            <span class="text-brand-cyan font-mono text-xs uppercase tracking-widest font-bold">Contato Direto</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Vamos trocar uma ideia ou construir um projeto?</h2>
+            <p class="text-slate-400 text-sm sm:text-base max-w-lg mx-auto">
+                Disponível para novos projetos de landing pages, oportunidades profissionais e colaborações no GitHub.
+            </p>
+            
+            <!-- Grid de Contato -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 text-left">
+                
+                <!-- WhatsApp -->
+                <a href="https://wa.me/5521985236753?text=Ol%C3%A1%20Felipe!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." 
+                   target="_blank" 
+                   class="p-5 rounded-xl bg-dark-950 border border-slate-800 hover:border-emerald-500/60 transition group">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3 group-hover:scale-110 transition">
+                        <i data-lucide="phone" class="w-5 h-5"></i>
+                    </div>
+                    <p class="text-xs text-slate-400 font-medium">WhatsApp</p>
+                    <p class="text-sm font-bold text-white mt-0.5">(21) 98523-6753</p>
+                </a>
+
+                <!-- E-mail -->
+                <a href="mailto:Felipesiscaromendes@gmail.com" 
+                   class="p-5 rounded-xl bg-dark-950 border border-slate-800 hover:border-blue-500/60 transition group">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center mb-3 group-hover:scale-110 transition">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                    </div>
+                    <p class="text-xs text-slate-400 font-medium">E-mail</p>
+                    <p class="text-xs font-bold text-white mt-0.5 truncate" title="Felipesiscaromendes@gmail.com">Felipesiscaromendes@gmail.com</p>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/felipesiscaromendes21/" 
+                   target="_blank" 
+                   class="p-5 rounded-xl bg-dark-950 border border-slate-800 hover:border-brand-cyan/60 transition group">
+                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-3 group-hover:scale-110 transition">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </div>
+                    <p class="text-xs text-slate-400 font-medium">LinkedIn</p>
+                    <p class="text-sm font-bold text-white mt-0.5">/in/felipesiscaromendes21</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-dark-950 text-center text-xs text-slate-500 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-3">
+            <p>© Felipe Siscaro Mendes (Felpatoo). Todos os direitos reservados.</p>
+            <p class="flex items-center gap-1 justify-center">
+                Feito com <i data-lucide="heart" class="w-3.5 h-3.5 text-red-500 fill-red-500"></i> e Tailwind CSS no Rio de Janeiro.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Ativação dos ícones Lucide -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
